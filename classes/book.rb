@@ -1,6 +1,6 @@
 require_relative 'item'
 
-class Book < item
+class Book < Item
   attr_accessor :publisher, :cover_state, :label, :author, :genre
 
   def initialize(publish_date, publisher, cover_state, _id = rand(1..900))

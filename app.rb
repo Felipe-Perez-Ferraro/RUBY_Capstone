@@ -2,7 +2,6 @@ require './functions/add_items'
 require './functions/list_features'
 require './functions/list_items'
 
-
 class App
   include AddItems
   include ListFeatures

@@ -4,11 +4,9 @@ module ListItems
       puts 'There are no books yet...'
     else
       @books.each_with_index do |book, index|
-
         puts "\n#{index}) BookId: #{book.id} | Publish Date: #{book.publish_date} | " \
              "Cover State: #{book.cover_state} | " \
              "Label: #{book.label.title} | Publisher: #{book.publisher}"
-
       end
     end
   end

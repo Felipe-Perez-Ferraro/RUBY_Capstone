@@ -31,8 +31,6 @@ class Item
     @archived = true
   end
 
-  private
-
   def can_be_archived?
     return false if Date.today.prev_year(10) < Date.parse(@publish_date)
 

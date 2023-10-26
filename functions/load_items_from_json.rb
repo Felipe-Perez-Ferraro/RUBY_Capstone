@@ -27,7 +27,7 @@ module LoadItemsFromJson
     end
   end
 
-  def load_music_albums_from_json 
+  def load_music_albums_from_json
     return unless File.exist?('./music_albums.json')
 
     file = File.read('./music_albums.json')
@@ -39,7 +39,7 @@ module LoadItemsFromJson
     end
   end
 
-  def find_features(author_id, genre_id, label_id,  item)
+  def find_features(author_id, genre_id, label_id, item)
     find_author_id = @authors.find { |el| el.id == author_id }
     item.add_author(find_author_id)
     find_genre_id = @genres.find { |el| el.id == genre_id }

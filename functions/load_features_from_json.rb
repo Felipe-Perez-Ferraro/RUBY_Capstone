@@ -23,7 +23,7 @@ module LoadFeaturesFromJson
       @genres << Genre.new(genre['name'], genre['id'])
     end
   end
-  
+
   def load_labels_from_json
     return unless File.exist?('./labels.json')
 

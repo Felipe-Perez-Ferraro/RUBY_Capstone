@@ -10,10 +10,9 @@ module SaveItemsToJson
           'publish_date' => book.publish_date,
           'publisher' => book.publisher,
           'cover_state' => book.cover_state,
-          'author_id' => book.author.id, 
-          'genre_id' => book.genre.id, 
-          'label_id' => book.label.id, 
-        }
+          'author_id' => book.author.id,
+          'genre_id' => book.genre.id,
+          'label_id' => book.label.id, }
       }.to_json
     end
   end
@@ -36,7 +35,7 @@ module SaveItemsToJson
 
   def save_music_albums_to_json
     File.open('./music_albums.json', 'w') do |file|
-      file.puts @music_albums.map { |music_album| 
+      file.puts @music_albums.map { |music_album|
         {
           'id' => music_album.id,
           'publish_date' => music_album.publish_date,

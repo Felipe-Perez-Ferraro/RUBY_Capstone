@@ -1,29 +1,33 @@
 require './functions/add_items'
 require './functions/list_features'
 require './functions/list_items'
-
 class App
   include AddItems
   include ListFeatures
   include ListItems
-
   include LoadFeaturesFromJson
   include LoadItemsFromJson
   include SaveFeaturesToJson
   include SaveItemsToJson
 
   def initialize
+    @authors = []
     @books = []
     @games = []
+    @genres = []
     @items = []
     @labels = []
+    @music_albums = []
   end
 
   def run
     puts "\n-- Welcome to the Capstone Project! --"
+    load_authors_from_json
     load_labels_from_json
+    load_genres_from_json
     load_books_from_json
     load_games_from_json
+    load_music_albums_from_json
     loop do
       options_menu
     end
@@ -68,7 +72,7 @@ class App
     when 1
       list_books
     when 2
-      puts 'all music'
+      list_music_albums
     when 3
       list_games
     when 4
@@ -88,11 +92,11 @@ class App
     user_choice = gets.chomp.to_i
     case user_choice
     when 1
-      puts 'all Genres'
+      list_genres
     when 2
       list_labels
     when 3
-      puts 'all Authors'
+      list_authors
     when 4
       options_menu
     else
@@ -112,7 +116,7 @@ class App
     when 1
       add_new_book
     when 2
-      puts 'add music album'
+      add_new_music_album
     when 3
       add_new_game
     when 4
@@ -124,9 +128,12 @@ class App
 
   def exit_app
     puts "\nThank you for using our app!"
+    save_authors_to_json
     save_labels_to_json
+    save_genres_to_json
     save_books_to_json
     save_games_to_json
+    save_music_albums_to_json
     exit
   end
 end

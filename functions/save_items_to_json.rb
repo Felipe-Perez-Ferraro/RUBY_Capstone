@@ -12,7 +12,7 @@ module SaveItemsToJson
           'cover_state' => book.cover_state,
           'author_id' => book.author.id,
           'genre_id' => book.genre.id,
-          'label_id' => book.label.id, }
+          'label_id' => book.label.id }
       }.to_json
     end
   end
@@ -27,7 +27,7 @@ module SaveItemsToJson
           'last_played_at' => game.last_played_at,
           'author_id' => game.author.id,
           'genre_id' => game.genre.id,
-          'label_id' => game.label.id,
+          'label_id' => game.label.id
         }
       }.to_json
     end
@@ -42,7 +42,7 @@ module SaveItemsToJson
           'on_spotify' => music_album.on_spotify,
           'author_id' => music_album.author.id,
           'genre_id' => music_album.genre.id,
-          'label_id' => music_album.label.id,
+          'label_id' => music_album.label.id
         }
       }.to_json
     end

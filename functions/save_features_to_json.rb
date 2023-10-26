@@ -8,7 +8,7 @@ module SaveFeaturesToJson
         {
           'id' => author.id,
           'first_name' => author.first_name,
-          'last_name' => author.last_name,
+          'last_name' => author.last_name
         }
       }.to_json
     end
@@ -19,7 +19,7 @@ module SaveFeaturesToJson
       file.puts @genres.map { |genre|
         {
           'id' => genre.id,
-          'name' => genre.name,
+          'name' => genre.name
         }
       }.to_json
     end

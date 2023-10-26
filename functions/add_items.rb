@@ -71,6 +71,7 @@ module AddItems
       puts 'Something gone wrong! Please type Y or N'
       multiplayer = false
     end
+
     multiplayer
   end
 
@@ -101,6 +102,7 @@ module AddItems
       puts 'Something gone wrong! Please type YES or NO'
       spotify = false
     end
+
     spotify
   end
 end

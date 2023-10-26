@@ -4,7 +4,8 @@ module ListItems
       puts 'There are no books yet...'
     else
       @books.each_with_index do |book, index|
-        puts "\n#{index}) BookId: #{book.id} | Publish Date: #{book.publish_date} | Cover State: #{book.cover_state} | Label: #{book.label.title} | Publisher: #{book.publisher}"
+        puts "\n#{index}) BookId: #{book.id} | Publish Date: #{book.publish_date} | Cover State: #{book.cover_state} | " \
+             "Label: #{book.label.title} | Publisher: #{book.publisher}"
       end
     end
   end
@@ -14,7 +15,8 @@ module ListItems
       puts 'There are no games yet...'
     else
       @games.each_with_index do |game, index|
-        puts "\n#{index}) GameId: #{game.id} | Publish Date: #{game.publish_date} | Multiplayer: #{game.multiplayer} | Last Played: #{game.last_played_at} | Label: #{game.label.title}"
+        puts "\n#{index}) GameId: #{game.id} | Publish Date: #{game.publish_date} | Multiplayer: #{game.multiplayer} | " \
+             "Last Played: #{game.last_played_at} | Label: #{game.label.title}"
       end
     end
   end

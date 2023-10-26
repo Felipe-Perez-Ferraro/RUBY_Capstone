@@ -13,7 +13,7 @@ module ListFeatures
     if @genres.empty?
       puts 'No genres found!'
     else
-      @genres each_with_index do |genre, index|
+      @genres.each_with_index do |genre, index|
         puts "#{index}) Id: #{genre.id} | Genre: #{genre.name}"
       end
     end

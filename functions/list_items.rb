@@ -9,7 +9,7 @@ module ListItems
       end
     end
   end
-​
+  ​
   def list_games
     if @games.empty?
       puts 'There is any game yet...'
@@ -21,7 +21,7 @@ module ListItems
       end
     end
   end
-​
+  ​
   def list_music_albums
     if @music_albums.empty?
       puts 'There is no music albums...'

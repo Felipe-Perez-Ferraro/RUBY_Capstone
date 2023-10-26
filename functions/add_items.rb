@@ -24,7 +24,7 @@ module AddItems
     @books << new_book
     puts 'New Book created!'
   end
-​
+  ​
   def cover_state_func
     loop do
       puts 'How is the book cover state? ([G]ood/[B]ad)'
@@ -40,7 +40,7 @@ module AddItems
     end
     cover_state
   end
-​
+  ​
   def add_new_game
     print 'Publish Date? '
     publish_date = gets.chomp
@@ -57,7 +57,7 @@ module AddItems
     @games << new_game
     puts 'New Game created!'
   end
-​
+  ​
   def multiplayer_func
     puts 'Is this a Multiplayer game? ([Y]es / [N]o)'
     print 'Enter your option: '
@@ -70,10 +70,11 @@ module AddItems
       puts 'Something gone wrong! Please type Y or N'
       multiplayer = false
     end
-​
+
+    ​
     multiplayer
   end
-​
+  ​
   def add_new_music_album
     print 'Publish Date? '
     publish_date = gets.chomp
@@ -88,7 +89,7 @@ module AddItems
     @music_albums << new_music_album
     puts 'New Music Album created!'
   end
-​
+  ​
   def on_spotify_func
     puts 'The album is on Spotify? (Yes / No)'
     print 'Enter your option: '
@@ -101,6 +102,7 @@ module AddItems
       puts 'Something gone wrong! Please type YES or NO'
       spotify false
     end
+
     spotify
   end
-end 
+end

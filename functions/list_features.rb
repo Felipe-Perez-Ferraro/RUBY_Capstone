@@ -8,7 +8,7 @@ module ListFeatures
       end
     end
   end
-​
+  ​
   def list_genres
     if @genres.empty?
       puts 'No genres found!'
@@ -18,7 +18,7 @@ module ListFeatures
       end
     end
   end
-​
+  ​
   def list_labels
     if @labels.empty?
       puts 'There is no labels yet...'

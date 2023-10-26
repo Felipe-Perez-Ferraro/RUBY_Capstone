@@ -2,10 +2,16 @@ require './functions/add_items'
 require './functions/list_features'
 require './functions/list_items'
 
+
 class App
   include AddItems
   include ListFeatures
   include ListItems
+
+  include LoadFeaturesFromJson
+  include LoadItemsFromJson
+  include SaveFeaturesToJson
+  include SaveItemsToJson
 
   def initialize
     @books = []
@@ -16,7 +22,9 @@ class App
 
   def run
     puts "\n-- Welcome to the Capstone Project! --"
-
+    load_labels_from_json
+    load_books_from_json
+    load_games_from_json
     loop do
       options_menu
     end
@@ -117,6 +125,9 @@ class App
 
   def exit_app
     puts "\nThank you for using our app!"
+    save_labels_to_json
+    save_books_to_json
+    save_games_to_json
     exit
   end
 end

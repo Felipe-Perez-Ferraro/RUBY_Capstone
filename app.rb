@@ -1,4 +1,19 @@
+require './functions/add_items'
+require './functions/list_features'
+require './functions/list_items'
+
 class App
+  include AddItems
+  include ListFeatures
+  include ListItems
+
+  def initialize
+    @books = []
+    @games = []
+    @items = []
+    @labels = []
+  end
+
   def run
     puts "\n-- Welcome to the Capstone Project! --"
 
@@ -44,11 +59,11 @@ class App
     user_choice = gets.chomp.to_i
     case user_choice
     when 1
-      puts 'all books'
+      list_books
     when 2
       puts 'all music'
     when 3
-      puts 'all games'
+      list_games
     when 4
       options_menu
     else
@@ -68,7 +83,7 @@ class App
     when 1
       puts 'all Genres'
     when 2
-      puts 'all Labels'
+      list_labels
     when 3
       puts 'all Authors'
     when 4
@@ -88,11 +103,11 @@ class App
     user_choice = gets.chomp.to_i
     case user_choice
     when 1
-      puts 'add book'
+      add_new_book
     when 2
       puts 'add music album'
     when 3
-      puts 'add new game'
+      add_new_game
     when 4
       options_menu
     else

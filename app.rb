@@ -1,15 +1,13 @@
 require './functions/add_items'
 require './functions/list_features'
 require './functions/list_items'
-require './functions/load_features_from_json'
-require './functions/load_items_from_json'
-require './functions/save_features_to_json'
-require './functions/save_items_to_json'
+
 
 class App
   include AddItems
   include ListFeatures
   include ListItems
+
   include LoadFeaturesFromJson
   include LoadItemsFromJson
   include SaveFeaturesToJson

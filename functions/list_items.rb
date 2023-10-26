@@ -4,8 +4,10 @@ module ListItems
       puts 'There is any book yet...'
     else
       @books.each_with_index do |book, index|
+
         print "\n#{index}) BookId: #{book.id} | Publish Date: #{book.publish_date} | Cover State: #{book.cover_state} |"
         print " Label: #{book.label.title} | Publisher: #{book.publisher}\n"
+
       end
     end
   end
@@ -18,6 +20,7 @@ module ListItems
         print "\n#{index}) GameId: #{game.id} | Publish Date: #{game.publish_date} | "
         print "Multiplayer: #{game.multiplayer} | Last Played: #{game.last_played_at} | "
         print "Label: #{game.label.title}\n"
+
       end
     end
   end

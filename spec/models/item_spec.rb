@@ -30,12 +30,12 @@ describe Item do
       item.add_author(author)
       expect(author.items.length).to be(1)
     end
-    
+
     it 'Should add a Genre' do
       item.add_author(genre)
       expect(genre.items.length).to be(1)
     end
-    
+
     it 'Should add a Label' do
       item.add_author(label)
       expect(label.items.length).to be(1)
@@ -43,19 +43,19 @@ describe Item do
   end
 
   describe 'move_to_archive method' do
-    it 'Should set @archived to false' do 
+    it 'Should set @archived to false' do
       item.publish_date = '26/10/2023'
-      expect { item.move_to_archive }.not_to change { item.archived }
+      expect { item.move_to_archive }.not_to(change { item.archived })
     end
 
-    it 'Should set @archived to true' do 
+    it 'Should set @archived to true' do
       item.publish_date = '26/10/2010'
       expect { item.move_to_archive }.to change { item.archived }.from(false).to(true)
     end
   end
 
   describe 'can_be_archived? method' do
-    it 'Should return true' do 
+    it 'Should return true' do
       expect(item.can_be_archived?).to be(true)
     end
 

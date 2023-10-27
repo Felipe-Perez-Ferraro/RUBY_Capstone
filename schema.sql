@@ -1,3 +1,12 @@
+CREATE TABLE Items (
+  id INTEGER PRIMARY KEY,
+  genre_id INTEGER REFERENCES Genre(id),
+  author_id INTEGER REFERENCES Author(id),
+  label_id INTEGER REFERENCES Label(id),
+  publish_date DATE,
+  archived BOOLEAN
+);
+
 CREATE TABLE Author (
   id INTEGER PRIMARY KEY,
   first_name VARCHAR(30),

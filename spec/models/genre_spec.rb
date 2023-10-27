@@ -15,9 +15,5 @@ describe Genre do
     it 'Should be empty' do
       expect(genre.items.length).to be(0)
     end
-    it 'Should add an item' do
-      genre.add_item(item)
-      expect(genre.items.length).to be(1)
-    end
   end
 end

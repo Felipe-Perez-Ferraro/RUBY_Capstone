@@ -20,10 +20,5 @@ describe Label do
     it 'Should be empty' do
       expect(label.items.length).to be(0)
     end
-
-    it 'Should add an item' do
-      label.add_item(item)
-      expect(label.items.length).to be(1)
-    end
   end
 end

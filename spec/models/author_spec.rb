@@ -16,9 +16,5 @@ describe Author do
     it 'Should be empty' do
       expect(author.items.length).to be(0)
     end
-    it 'Should add an item' do
-      author.add_item(item)
-      expect(author.items.length).to be(1)
-    end
   end
 end

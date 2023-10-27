@@ -55,7 +55,7 @@ In this project, we are building a item library app using Ruby. The application 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [live demo Video](https://drive.google.com/file/d/1-WUHQVu_QRu-Lk0E2BbHWiTwA4xBfQmA/view?usp=sharing)
+- [live demo Video](https://drive.google.com/file/d/1GSmMYJk5fQkSfFdOr96AuVywlGVRo3As/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

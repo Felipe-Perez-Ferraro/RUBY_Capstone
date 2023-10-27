@@ -6,7 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Video Presentation](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,8 +54,8 @@ In this project, we are building a item library app using Ruby. The application 
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-- [live demo Video](https://drive.google.com/file/d/1GSmMYJk5fQkSfFdOr96AuVywlGVRo3As/view?usp=sharing)
+## 🚀 Video Presentation <a name="live-demo"></a>
+- [Project Presentation Video](https://drive.google.com/file/d/1GSmMYJk5fQkSfFdOr96AuVywlGVRo3As/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

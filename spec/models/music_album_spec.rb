@@ -1,4 +1,4 @@
-require '../.././classes/music_album'
+require './classes/music_album'
 describe MusicAlbum do
   let(:music_album) { MusicAlbum.new('26/10/2023', 'True', 888) }
   describe 'Create a new music_album' do

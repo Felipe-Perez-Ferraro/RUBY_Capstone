@@ -1,5 +1,5 @@
-require '../.././classes/author'
-require '../.././classes/item'
+require './classes/author'
+require './classes/item'
 describe Author do
   let(:author) { Author.new('Zabih', 'Noori', 800) }
   let(:item) { Item.new('26/10/2023') }

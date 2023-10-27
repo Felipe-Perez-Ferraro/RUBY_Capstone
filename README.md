@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 🏫 Ruby Capstone Project 📚 <a name="about-project"></a>
+# 🏫 Ruby Capstone Project <a name="about-project"></a>
 
 In this project, we are building a item library app using Ruby. The application allows managing items and store them.
 
@@ -45,9 +45,9 @@ In this project, we are building a item library app using Ruby. The application 
 
 ### Key Features <a name="key-features"></a>
 
-- **Student and Teacher Records:** Ability to add new items to the system.
-- **Book Management:** Manage a list of items in the library.
-- **Borrowing Records:** Keep track of who borrowed a given book and when.
+- **Books Games and Music Albums:** Ability to add new items to the system.
+- **Features Management:** Manage a list of features like authors,genres and labels in the library.
+- **Save items & features:** Save you items and features created in json files.
 - **Modular Design:** Built with Object-Oriented Programming (OOP) principles for easy scalability and maintenance.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -55,7 +55,7 @@ In this project, we are building a item library app using Ruby. The application 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [live demo (in progress)]()
+- [live demo Video](https://drive.google.com/file/d/1-WUHQVu_QRu-Lk0E2BbHWiTwA4xBfQmA/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +98,7 @@ For now, the project is primarily command-line based. Detailed usage instruction
 To run tests:
 
 ```test
-  rspec spec/
+  rspec spec/models
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

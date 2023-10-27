@@ -1,5 +1,5 @@
-require '../.././classes/genre'
-require '../.././classes/item'
+require './classes/genre'
+require './classes/item'
 describe Genre do
   let(:genre) { Genre.new('Terror', 800) }
   let(:item) { Item.new('26/10/2023') }

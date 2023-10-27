@@ -1,7 +1,7 @@
-require '../.././classes/item'
-require '../.././classes/author'
-require '../.././classes/genre'
-require '../.././classes/label'
+require './classes/item'
+require './classes/author'
+require './classes/genre'
+require './classes/label'
 
 describe Item do
   let(:item) { Item.new('26/10/2000') }
